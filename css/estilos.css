@@ -1,0 +1,246 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.secoes{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2{
+    color:#ffffff;
+    text-shadow: 3px 6px 1px #000000;
+
+}
+
+/* seção banner */
+
+.fundo-banner{
+    position: relative;
+    width: 100%;
+
+}
+.fundo-banner video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.fundo-banner video::after{
+    content: "";
+    background-size: 300%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-align: center;
+     align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 500px;
+
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+.img-bio{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-image: url("/assets/neymar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-bio::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 215px;
+    height: 215px;
+    background-size: 300%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ffdf00, #009c3b); 
+}
+
+.neymar-verificado{
+    position: relative;
+    display: flex;
+}
+
+.neymar-verificado h1{
+    font-size: 80px;
+    
+}
+
+.neymar-verificado h1::before{
+    content:"";
+    width: 90px;
+    height: 6px;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    margin: 0;
+}
+
+.neymar-verificado h1::after{
+    background-image: url("/assets/verificado.png");
+    content:"";
+    position: absolute;
+    bottom: 10px;
+    left: 340px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-links{
+    width: 768px;
+    margin-top: 40px; 
+    position: absolute;
+    top: 350px;  
+}
+
+.links-bio-linha a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px ;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: #0200006e;
+    padding: 30px;
+    height: 80px;
+}
+
+.links-bio-linha a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.links-bio-linha a img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    border-radius: 2px
+    
+}
+
+/* seção estatistica */
+.estatisticas{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background: url("/assets/imagem-de-fundo.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+
+.estatisticas h2{
+    font-size: 74px;
+    margin-bottom: 50px;
+}
+
+.estatisticas img{
+    width: 100%;
+}
+
+.tabela-estatisticas{
+    width: 80%;
+    height: 30vh;
+}
+
+.tabela-estatisticas table{
+    width: 100%;
+    height: 100%;
+}
+
+
+.tabela-estatisticas table td{
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.tabela-estatisticas table th{
+    padding: 30px;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela-estatisticas tbody td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+  }
+
+.tabela-estatisticas .brasoes{
+    width: 50px;
+    margin-right: 10px;
+}
+
+th, td{
+    border: solid 5px #0000005d;  
+}
+
+.tabela-estatisticas table thead tr:first-of-type{
+    background-color: #000000cc;
+    color: #ffffff;
+
+}
+
+.tabela-estatisticas table tr:nth-last-of-type(odd){
+    background-color: #ffffffcc;
+    color: #000000;
+
+}
+
+.tabela-estatisticas table tr:nth-last-of-type(even){
+    background-color: #000000ad;
+    color: #ffffff;
+
+}
